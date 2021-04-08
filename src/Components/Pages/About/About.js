@@ -3,8 +3,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InfoCard from "./InfoCard";
 import Techstack from "./Techstack";
-import Resume from "../../Assets/Resume/Resume.pdf";
-import sam1 from "../../Assets/sam1.png";
+import Resume from "../../../Assets/Resume/Resume.pdf";
+import sam1 from "../../../Assets/sam1.png";
 
 const About = () => {
   return (

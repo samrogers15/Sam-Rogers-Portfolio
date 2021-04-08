@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "../Assets/logo.png";
+import './NavBar.css';
 
 const NavBar = () => {
   const [expand, setExpandState] = useState(false);
@@ -20,16 +20,18 @@ const NavBar = () => {
 
   return (
     <Navbar
-      bg="light"
+      bg="dark"
+      variant="dark"
       expand="md"
-      expended={expand}
+      expanded={expand}
       fixed="top"
       className={navColor ? "sticky" : "navbar"}
+      id="navBarID"
     >
       <Container>
         <Navbar.Brand href="/">
           {" "}
-          <img src={logo} className="img-fluid logo" alt="srLogo" />
+          <span>Sam Rogers Web Developer</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -65,30 +67,6 @@ const NavBar = () => {
               >
                 <i className="fab fa-codepen"></i> Work
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Resume"
-                onClick={() => setExpandState(false)}
-              >
-                <i className="far fa-file-alt"></i> Resume
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Contact"
-                onClick={() => setExpandState(false)}
-              >
-                <i className="far fa-envelope-open-text"></i> Contact
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="fork-btn">
-              <Button href='https://github.com/samrogers15/Sam-Rogers-Portfolio' target='_blank' className='fork-btn-inner'>
-                  <i className='fas fa-code-branch'></i>{" "}
-                  <i className='far fa-start'></i>
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

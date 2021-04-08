@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import sam1 from '../../Assets/sam1.png';
+import sam1 from '../../../Assets/sam1.png';
 import Tilt from "react-parallax-tilt";
 
 const HomeAlt = () => {

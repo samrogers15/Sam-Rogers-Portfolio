@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import "./Footer.css";
 
 const Footer = () => {
   const date = new Date();
@@ -10,17 +11,28 @@ const Footer = () => {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-left">
-          <h3>Site Developed by Sam Rogers</h3>
+          <p>Site Developed by Sam Rogers | Copyright © {year} SRD</p>
         </Col>
         <Col md="4" className="footer-left">
-          <h3>Copyright © {year} SRD</h3>
+          <p>
+            Like this site? Take a{" "}
+            <a
+              href="https://github.com/samrogers15/Sam-Rogers-Portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              peek
+            </a>{" "}
+            under the hood to view the source code!
+          </p>
         </Col>
         <Col md="4" className="footer-center">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/samuelerogers/"
-                style={{ color: "white" }}
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
@@ -28,7 +40,8 @@ const Footer = () => {
             <li className="social-icons">
               <a
                 href="https://github.com/samrogers15"
-                style={{ color: "white" }}
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="fab fa-github"></i>
               </a>

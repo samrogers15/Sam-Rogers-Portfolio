@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Preloader from './Components/Preloader';
-import NavBar from './Components/NavBar';
-import Scroll from './Components/Scroll';
-import Footer from './Components/Footer';
-import Home from './Components/Home';
-import About from './Components/About';
-import Work from './Components/Work';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Preloader from './Components/Preloader/Preloader';
+import NavBar from './Components/NavBar/NavBar';
+import Scroll from './Components/Scroll/Scroll';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Pages/Home/Home';
+import About from './Components/Pages/About/About';
+import Work from './Components/Pages/Work/Work';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
@@ -27,8 +27,8 @@ function App() {
         <Scroll />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Work" component={Work} />
+          <Route path="/about" component={About} />
+          <Route path="/work" component={Work} />
         </Switch>
         <Footer />
       </div>

@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WorkCard from "./WorkCard";
 
 // need to import some images
-import samnlola from "../../Assets/samnlola.png";
+import samnlola from "../../../Assets/samnlola.png";
 
 const Work = () => {
   return (
