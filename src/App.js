@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Preloader from "./Components/Preloader/Preloader";
 import NavBar from "./Components/NavBar/NavBar";
 import Scroll from "./Components/Scroll/Scroll";
-import JumboTron from "./Components/Jumbotron/JumboTron";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
@@ -26,7 +25,6 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
         <div className="backgroundImage">
-          <JumboTron />
           <Scroll />
           <Switch>
             <Route path="/" exact component={Home} />

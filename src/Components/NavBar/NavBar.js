@@ -12,7 +12,7 @@ const NavBar = () => {
   const [navTextColor, setNavTextColorState] = useState(false);
 
   const scrollHandler = () => {
-    if (window.scrollY >= 25) {
+    if (window.scrollY >= 45) {
       setNavBarColorState(true);
       setNavTextColorState(true);
     } else {

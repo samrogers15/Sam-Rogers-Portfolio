@@ -7,7 +7,7 @@ const JumboTron = () => {
   return (
     <Jumbotron fluid className="jumbo">
       <h1 className="jumbotronHeading bg-transparent">
-        Hello! Welcome to the home of{" "}
+        Hello and welcome to the home of{" "}
         <strong className="name">Sam Rogers Developer!</strong>
         <br />
         <br />

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   const date = new Date();
@@ -48,6 +49,17 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="footerIcons"
                   icon={faGithubSquare}
+                />
+              </a>
+              <a
+                className="icons"
+                href="mailto:samrogers15@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="footerIcons"
+                  icon={faEnvelopeOpenText}
                 />
               </a>
             </div>
