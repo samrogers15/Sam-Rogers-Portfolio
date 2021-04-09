@@ -1,0 +1,25 @@
+.heading {
+  padding-top: 25px;
+  padding-left: 10px;
+  color: white;
+}
+
+.homeRow {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.homeAboutIntro {
+  color: white;
+}
+
+.homeAboutSocial {
+  color: white;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.homeAltIcons {
+  color: white;
+  font-size: 50px;
+}

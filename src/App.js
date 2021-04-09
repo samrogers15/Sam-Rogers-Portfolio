@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Preloader from './Components/Preloader/Preloader';
-import NavBar from './Components/NavBar/NavBar';
-import Scroll from './Components/Scroll/Scroll';
-import Footer from './Components/Footer/Footer';
-import Home from './Components/Pages/Home/Home';
-import About from './Components/Pages/About/About';
-import Work from './Components/Pages/Work/Work';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Preloader from "./Components/Preloader/Preloader";
+import NavBar from "./Components/NavBar/NavBar";
+import Scroll from "./Components/Scroll/Scroll";
+import JumboTron from "./Components/Jumbotron/JumboTron";
+import Footer from "./Components/Footer/Footer";
+import Home from "./Components/Pages/Home/Home";
+import About from "./Components/Pages/About/About";
+import Work from "./Components/Pages/Work/Work";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
@@ -24,12 +25,15 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
-        <Scroll />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/work" component={Work} />
-        </Switch>
+        <div className="backgroundImage">
+          <JumboTron />
+          <Scroll />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/work" component={Work} />
+          </Switch>
+        </div>
         <Footer />
       </div>
     </Router>

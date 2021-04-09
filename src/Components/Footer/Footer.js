@@ -37,7 +37,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon className="social-icons" icon={faLinkedin} />
+                <FontAwesomeIcon className="footerIcons" icon={faLinkedin} />
               </a>
               <a
                 className="icons"
@@ -46,7 +46,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <FontAwesomeIcon
-                  className="social-icons"
+                  className="footerIcons"
                   icon={faGithubSquare}
                 />
               </a>

@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faPortrait,
-  faLaptop,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faPortrait, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -16,7 +12,7 @@ const NavBar = () => {
   const [navTextColor, setNavTextColorState] = useState(false);
 
   const scrollHandler = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 25) {
       setNavBarColorState(true);
       setNavTextColorState(true);
     } else {
@@ -34,13 +30,15 @@ const NavBar = () => {
       expand="md"
       expanded={expand}
       fixed="top"
-      className={navBarColor ? "sticky" : "navbar"}
+      className={navBarColor ? "stickyBackground" : "navbarBackground"}
       id="navBarID"
     >
       <Container>
         <Navbar.Brand href="/">
           {" "}
-          <span className={navTextColor ? "stickyText" : "navbarText"}>Sam Rogers Web Developer</span>
+          <span className={navTextColor ? "stickyText" : "navbarText"} id="pageHeader">
+            Sam Rogers Web Developer
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -55,13 +53,17 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => setExpandState(false)}
-              >
-                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faHome} />
-                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">Home</span>
+              <Nav.Link as={Link} to="/" onClick={() => setExpandState(false)}>
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faHome}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Home
+                </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -70,8 +72,16 @@ const NavBar = () => {
                 to="/About"
                 onClick={() => setExpandState(false)}
               >
-                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faPortrait} />
-                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">About</span>
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faPortrait}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  About
+                </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -80,8 +90,16 @@ const NavBar = () => {
                 to="/Work"
                 onClick={() => setExpandState(false)}
               >
-                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faLaptop} />
-                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">Work</span>
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faLaptop}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Work
+                </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

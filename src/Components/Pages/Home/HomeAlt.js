@@ -1,8 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import sam1 from '../../../Assets/sam1.png';
+import sam1 from "../../../Assets/sam1.png";
 import Tilt from "react-parallax-tilt";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 
 const HomeAlt = () => {
   return (
@@ -36,7 +39,7 @@ const HomeAlt = () => {
           </Col>
           <Col md={4} className="tiltLogo">
             <Tilt>
-                <img src={sam1} className='img-fluid' alt='samPicNum1'/>
+              <img src={sam1} className="img-fluid" alt="samPicNum1" />
             </Tilt>
           </Col>
         </Row>
@@ -45,28 +48,38 @@ const HomeAlt = () => {
             <h1 className="profiles">
               Want to get in touch? You can find me here:
             </h1>
-            <ul className="socialLinks">
-              <li className="socialIcons">
-                <a
-                  href="https://www.linkedin.com/in/samuelerogers/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-color homeSocialIcons"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li className="socialIcons">
-                <a
-                  href="https://github.com/samrogers15"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-color homeSocialIcons"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
+            <div>
+              <a
+                className="icons"
+                href="https://www.linkedin.com/in/samuelerogers/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon className="homeAltIcons" icon={faLinkedin} />
+              </a>
+              <a
+                className="icons"
+                href="https://github.com/samrogers15"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="homeAltIcons"
+                  icon={faGithubSquare}
+                />
+              </a>
+              <a
+                className="icons"
+                href="mailto:samrogers15@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="homeAltIcons"
+                  icon={faEnvelopeOpenText}
+                />
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>
