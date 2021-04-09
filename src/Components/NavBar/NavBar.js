@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPortrait, faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faPortrait, faLaptop, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -69,6 +69,42 @@ const NavBar = () => {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/Skills"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faLaptop}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Skills
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Work"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faBriefcase}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Work
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/About"
                 onClick={() => setExpandState(false)}
               >
@@ -81,24 +117,6 @@ const NavBar = () => {
                   id="navigationText"
                 >
                   About
-                </span>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Work"
-                onClick={() => setExpandState(false)}
-              >
-                <FontAwesomeIcon
-                  className={navTextColor ? "stickyText" : "navbarText"}
-                  icon={faLaptop}
-                />
-                <span
-                  className={navTextColor ? "stickyText" : "navbarText"}
-                  id="navigationText"
-                >
-                  Work
                 </span>
               </Nav.Link>
             </Nav.Item>

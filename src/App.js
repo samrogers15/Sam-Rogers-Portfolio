@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Pages/Home/Home";
 import About from "./Components/Pages/About/About";
 import Work from "./Components/Pages/Work/Work";
+import Skills from "./Components/Pages/Skills/Skills"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -28,8 +29,9 @@ function App() {
           <Scroll />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
+            <Route path="/skills" component={Skills} />
             <Route path="/work" component={Work} />
+            <Route path="/about" component={About} />
           </Switch>
         </div>
         <Footer />

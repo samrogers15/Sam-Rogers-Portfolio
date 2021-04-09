@@ -50,7 +50,7 @@ const HomeAlt = () => {
             </h1>
             <div>
               <a
-                className="icons"
+                className="home-icons"
                 href="https://www.linkedin.com/in/samuelerogers/"
                 target="_blank"
                 rel="noreferrer"
@@ -58,7 +58,7 @@ const HomeAlt = () => {
                 <FontAwesomeIcon className="homeAltIcons" icon={faLinkedin} />
               </a>
               <a
-                className="icons"
+                className="home-icons"
                 href="https://github.com/samrogers15"
                 target="_blank"
                 rel="noreferrer"
@@ -69,7 +69,7 @@ const HomeAlt = () => {
                 />
               </a>
               <a
-                className="icons"
+                className="home-icons"
                 href="mailto:samrogers15@gmail.com"
                 target="_blank"
                 rel="noreferrer"

@@ -14,10 +14,10 @@ const Home = () => {
         content={
           <h1 className="jumbotron-heading">
             Hello and welcome to the home of{" "}
-            <strong className="name">Sam Rogers Developer!</strong>
+            <strong className="name">Sam Rogers!</strong>
             <br />
             <br />
-            It's a pleasure to meet you.
+            <TypeWriter />
           </h1>
         }
       />
@@ -37,11 +37,7 @@ const Home = () => {
                 <br />
                 <br />
                 Take a cruise around the site!
-                <TypeWriter />
               </h2>
-              <div>
-                <TypeWriter />
-              </div>
             </Col>
             <Col md={5} className="homeLogo">
               <img src={samnlola} alt="samAndLola" className="img-fluid" />

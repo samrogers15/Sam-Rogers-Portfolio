@@ -1,20 +1,18 @@
 import React from "react";
-import TypeWriterEffect from "react-typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 const TypeWriter = () => {
   return (
-    <TypeWriterEffect
+    <Typewriter
       options={{
-        strings: [
-          "Developer / Programmer",
-          "MERN Stack Developer",
-          "Full Stack UI/UX Expert",
-          "Database Aficionado",
-          "Lover of all things outdoors"
-        ],
+        strings: ["Developer / Programmer",
+        "MERN Stack Developer",
+        "Full Stack UI/UX Expert",
+        "Database Aficionado",
+        "Lover of all things outdoors"],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 15,
       }}
     />
   );
