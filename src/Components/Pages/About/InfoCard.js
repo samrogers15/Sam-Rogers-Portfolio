@@ -12,6 +12,7 @@ const InfoCard = () => {
           </p>
           <ul>
             <li className="about-activity">
+              {/* PUT IN SOME ICONS FROM FA FOR THINGS YOU LIKE - SKIING< CLIMBING< ETC */}
               <i className="far fa-hand-point-right"></i> Something I Like
             </li>
             <li className="about-activity">

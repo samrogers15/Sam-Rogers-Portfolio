@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&family=Source+Code+Pro&display=swap");
+
+.footer {
+  font-family: "Source Code Pro", monospace;
+  background-color: black;
+  color: white;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  text-align: center !important;
+  display: table;
+}
+
+/* @media (max-width: 767px) {
+  .footer-left,
+  .footer-center {
+    text-align: center !important;
+  }
+
+  .footer-right {
+    text-align: center !important;
+  }
+} */
+
+.footerText {
+  font-size: 12px;
+  color: white !important;
+  display: table-cell;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.social-icons {
+  color: white;
+  font-size: 30px;
+}
+
+.icons {
+  padding-right: 10px;
+  padding-left: 10px;
+}

@@ -1,18 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './NavBar.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faPortrait,
+  faLaptop,
+} from "@fortawesome/free-solid-svg-icons";
+import "./NavBar.css";
 
 const NavBar = () => {
   const [expand, setExpandState] = useState(false);
-  const [navColor, setNavColorState] = useState(false);
+  const [navBarColor, setNavBarColorState] = useState(false);
+  const [navTextColor, setNavTextColorState] = useState(false);
 
   const scrollHandler = () => {
     if (window.scrollY >= 20) {
-      setNavColorState(true);
+      setNavBarColorState(true);
+      setNavTextColorState(true);
     } else {
-      setNavColorState(false);
+      setNavBarColorState(false);
+      setNavTextColorState(false);
     }
   };
 
@@ -25,13 +34,13 @@ const NavBar = () => {
       expand="md"
       expanded={expand}
       fixed="top"
-      className={navColor ? "sticky" : "navbar"}
+      className={navBarColor ? "sticky" : "navbar"}
       id="navBarID"
     >
       <Container>
         <Navbar.Brand href="/">
           {" "}
-          <span>Sam Rogers Web Developer</span>
+          <span className={navTextColor ? "stickyText" : "navbarText"}>Sam Rogers Web Developer</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -46,8 +55,13 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" oncClick={() => setExpandState(false)}>
-                <i className="fas fa-home"></i> Home
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faHome} />
+                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">Home</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -56,7 +70,8 @@ const NavBar = () => {
                 to="/About"
                 onClick={() => setExpandState(false)}
               >
-                <i className="far fa-user"></i> About
+                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faPortrait} />
+                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">About</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -65,7 +80,8 @@ const NavBar = () => {
                 to="/Work"
                 onClick={() => setExpandState(false)}
               >
-                <i className="fab fa-codepen"></i> Work
+                <FontAwesomeIcon className={navTextColor ? "stickyText" : "navbarText"} icon={faLaptop} />
+                <span className={navTextColor ? "stickyText" : "navbarText"} id="navigationText">Work</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

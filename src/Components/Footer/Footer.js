@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const date = new Date();
@@ -9,12 +11,12 @@ const Footer = () => {
 
   return (
     <Container fluid className="footer">
-      <Row>
+      <Row className="footerRow">
         <Col md="4" className="footer-left">
-          <p>Site Developed by Sam Rogers | Copyright © {year} SRD</p>
+          <p className="footerText">Site Developed by Sam Rogers | Copyright © {year} SRD</p>
         </Col>
-        <Col md="4" className="footer-left">
-          <p>
+        <Col md="4" className="footer-center">
+          <p className="footerText">
             Like this site? Take a{" "}
             <a
               href="https://github.com/samrogers15/Sam-Rogers-Portfolio"
@@ -23,30 +25,33 @@ const Footer = () => {
             >
               peek
             </a>{" "}
-            under the hood to view the source code!
+            at the source code!
           </p>
         </Col>
-        <Col md="4" className="footer-center">
-          <ul className="footer-icons">
-            <li className="social-icons">
+        <Col md="4" className="footer-right">
+          <div className="footer-icons">
+            <div className="social-icons">
               <a
+                className="icons"
                 href="https://www.linkedin.com/in/samuelerogers/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-linkedin-in"></i>
+                <FontAwesomeIcon className="social-icons" icon={faLinkedin} />
               </a>
-            </li>
-            <li className="social-icons">
               <a
+                className="icons"
                 href="https://github.com/samrogers15"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fab fa-github"></i>
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faGithubSquare}
+                />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
