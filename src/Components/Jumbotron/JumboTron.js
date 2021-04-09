@@ -3,16 +3,10 @@ import { Jumbotron } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./JumboTron.css";
 
-const JumboTron = () => {
+const JumboTron = ({ content }) => {
   return (
     <Jumbotron fluid className="jumbo">
-      <h1 className="jumbotronHeading bg-transparent">
-        Hello and welcome to the home of{" "}
-        <strong className="name">Sam Rogers Developer!</strong>
-        <br />
-        <br />
-        It's a pleasure to meet you.
-      </h1>
+      {content}
     </Jumbotron>
   );
 };

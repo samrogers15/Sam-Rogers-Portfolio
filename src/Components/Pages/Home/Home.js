@@ -10,20 +10,30 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <JumboTron />
+      <JumboTron
+        content={
+          <h1 className="jumbotron-heading">
+            Hello and welcome to the home of{" "}
+            <strong className="name">Sam Rogers Developer!</strong>
+            <br />
+            <br />
+            It's a pleasure to meet you.
+          </h1>
+        }
+      />
       <section className="homePage">
         <Container fluid className="homeContent" id="homeContent">
           <Row className="homeRow">
             <Col md={7} className="homeTitle">
               <h2 className="heading">
                 Full stack software developer living in Portland, OR.
-                <br />              
                 <br />
                 <br />
-                Focused on building clean, organized, and functional sites through
-                the use of various programming languages (details here).
+                <br />
+                Focused on building clean, organized, and functional sites
+                through the use of various programming languages (details here).
                 {/* Add hyperlink to the details area */}
-                <br />              
+                <br />
                 <br />
                 <br />
                 Take a cruise around the site!

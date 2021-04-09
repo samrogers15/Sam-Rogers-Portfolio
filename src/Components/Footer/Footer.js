@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="footer-icons">
             <div className="social-icons">
               <a
-                className="icons"
+                className="footer-icon-images"
                 href="https://www.linkedin.com/in/samuelerogers/"
                 target="_blank"
                 rel="noreferrer"
@@ -41,7 +41,7 @@ const Footer = () => {
                 <FontAwesomeIcon className="footerIcons" icon={faLinkedin} />
               </a>
               <a
-                className="icons"
+                className="footer-icon-images"
                 href="https://github.com/samrogers15"
                 target="_blank"
                 rel="noreferrer"
@@ -52,7 +52,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                className="icons"
+                className="footer-icon-images"
                 href="mailto:samrogers15@gmail.com"
                 target="_blank"
                 rel="noreferrer"
