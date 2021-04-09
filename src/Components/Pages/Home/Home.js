@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import JumboTron from "../../Jumbotron/JumboTron";
 import samnlola from "../../../Assets/samnlola.png";
-import HomeAlt from "./HomeAlt";
 import TypeWriter from "./TypeWriter";
 import "./Home.css";
 
@@ -31,8 +30,7 @@ const Home = () => {
                 <br />
                 <br />
                 Focused on building clean, organized, and functional sites
-                through the use of various programming languages (details here).
-                {/* Add hyperlink to the details area */}
+                through the use of various programming languages.
                 <br />
                 <br />
                 <br />
@@ -44,7 +42,6 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-        <HomeAlt />
       </section>
     </>
   );

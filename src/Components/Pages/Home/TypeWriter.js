@@ -5,7 +5,7 @@ const TypeWriter = () => {
   return (
     <Typewriter
       options={{
-        strings: ["Developer / Programmer",
+        strings: ["Developer & Programmer",
         "MERN Stack Developer",
         "Full Stack UI/UX Expert",
         "Database Aficionado",
