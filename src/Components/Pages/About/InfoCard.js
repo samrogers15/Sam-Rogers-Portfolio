@@ -8,6 +8,7 @@ import {
   faBiking,
   faCampground,
   faHiking,
+  faPizzaSlice
 } from "@fortawesome/free-solid-svg-icons";
 
 const InfoCard = () => {
@@ -20,20 +21,28 @@ const InfoCard = () => {
       </h3>
       <ul>
         <li className="about-activity">
-          <span>Alpine and backcountry skiing</span>{" "}
-          <FontAwesomeIcon icon={faSkiing} />
+          <span className="activity">Alpine and backcountry skiing</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faSkiing} />
         </li>
         <li className="about-activity">
-          <span>Rock climbing</span> <FontAwesomeIcon icon={faMountain} />
+          <span className="activity">Rock climbing</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faMountain} />
         </li>
         <li className="about-activity">
-          <span>Biking</span> <FontAwesomeIcon icon={faBiking} />
+          <span className="activity">Biking</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faBiking} />
         </li>
         <li className="about-activity">
-          <span>Camping</span> <FontAwesomeIcon icon={faCampground} />
+          <span className="activity">Camping</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faCampground} />
         </li>
         <li className="about-activity">
-          <span>Hiking</span> <FontAwesomeIcon icon={faHiking} />
+          <span className="activity">Hiking</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faHiking} />
+        </li>
+        <li className="about-activity">
+          <span className="activity">Eating pizza!</span>{" "}
+          <FontAwesomeIcon className="activity-icon" icon={faPizzaSlice} />
         </li>
       </ul>
     </Card>

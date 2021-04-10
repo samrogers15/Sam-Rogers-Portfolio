@@ -22,7 +22,7 @@ const About = () => {
           </Col>
           <Col md={5}>
             <Tilt>
-              <img src={sam1} alt="samPic" className="img-fluid" />
+              <img src={sam1} alt="samPic" className="img-fluid sam-pizza-pic" />
             </Tilt>
           </Col>
         </Row>

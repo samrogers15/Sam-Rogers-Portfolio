@@ -2,6 +2,8 @@
   padding-top: 25px;
   padding-left: 10px;
   color: white;
+  text-align: center;
+  font-size: 40px;
 }
 
 .homeRow {
@@ -24,4 +26,14 @@
   font-size: 75px;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.rainbowPic {
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

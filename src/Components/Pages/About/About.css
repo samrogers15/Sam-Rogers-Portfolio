@@ -9,9 +9,27 @@
 
 .introParagraph {
   padding-bottom: 25px;
+  font-size: 45px;
 }
 
-.about-activity {
-  font-size: 20px;
-  padding-bottom: 15px;
+.activity {
+  font-size: 40px;
+}
+
+.activity-icon {
+  font-size: 45px;
+}
+
+.sam-pizza-pic {
+  width: 500px;
+  height: auto;
+  /* max-width: 50%;
+  max-height: 15%; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.about-me {
+  padding-bottom: 75px;
 }

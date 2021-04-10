@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import JumboTron from "../../Jumbotron/JumboTron";
-import samnlola from "../../../Assets/samnlola.png";
+import rainbow from "../../../Assets/rainbow.png";
 import TypeWriter from "./TypeWriter";
 import "./Home.css";
 
@@ -23,7 +23,7 @@ const Home = () => {
       <section className="homePage">
         <Container fluid className="homeContent" id="homeContent">
           <Row className="homeRow">
-            <Col md={7} className="homeTitle">
+            <Col lg={12} className="homeTitle">
               <h2 className="heading">
                 Full stack software developer living in Portland, OR.
                 <br />
@@ -37,8 +37,10 @@ const Home = () => {
                 Take a cruise around the site!
               </h2>
             </Col>
-            <Col md={5} className="homeLogo">
-              <img src={samnlola} alt="samAndLola" className="img-fluid" />
+          </Row>
+          <Row>
+            <Col lg={12} className="homeLogo">
+              <img src={rainbow} alt="rainbow" className="img-fluid rainbowPic" />
             </Col>
           </Row>
         </Container>
