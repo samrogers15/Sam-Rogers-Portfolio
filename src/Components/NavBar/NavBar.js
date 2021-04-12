@@ -34,7 +34,7 @@ const NavBar = () => {
       id="navBarID"
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           {" "}
           <span className={navTextColor ? "stickyText" : "navbarText"} id="pageHeader">
             Sam Rogers Web Developer
