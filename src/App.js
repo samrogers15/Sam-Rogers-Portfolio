@@ -12,18 +12,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-  const [load, setLoadState] = useState(true);
+  // const [load, setLoadState] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadState(false);
-    }, 1200);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoadState(false);
+  //   }, 1200);
+  // }, []);
 
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      {/* <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}> */}
         <NavBar />
         <div className="backgroundImage">
           <Scroll />
@@ -35,7 +35,7 @@ function App() {
           </Switch>
         </div>
         <Footer />
-      </div>
+      {/* </div> */}
     </Router>
   );
 }
