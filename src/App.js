@@ -21,6 +21,7 @@ function App() {
           <Route path="/skills" component={Skills} />
           <Route path="/work" component={Work} />
           <Route path="/about" component={About} />
+          <Route path="*" component={Home} />
         </Switch>
       </div>
       <Footer />
