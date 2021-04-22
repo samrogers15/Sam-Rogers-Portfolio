@@ -1,70 +1,238 @@
-# Getting Started with Create React App
+![GitHub Last Commit](https://img.shields.io/github/last-commit/samrogers15/Sam-Rogers-Portfolio?style=plastic)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/samrogers15/Sam-Rogers-Portfolio?style=plastic)
+![GitHub Followers](https://img.shields.io/github/followers/samrogers15?style=social)
+![GitHub](https://img.shields.io/github/languages/top/samrogers15/Sam-Rogers-Portfolio?style=plastic)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Sam Rogers Portfolio
+> This is a repository for my developer portfolio. It was built using React and was deployed to a custom domain name. My portfolio houses general information about myself, links to my professional materials (including my resume, LinkedIn profile, and Github profile), as well as links to recent projects I've worked on. It will be continually updated as I progress in my career.
+ 
+## Table of contents
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Live Link](#Live-Link)
+* [Screen Shot](#Screen-Shot)
+* [Code Snippets](#code-snippets)
+* [Sources](#sources)
+* [Contact](#contact)
 
-In the project directory, you can run:
+## General Info
+The portfolio was built with React and styled utilizing Bootstrap. Also included are a few NPM packages that helped enhance the overall style of the portfolio, including React Parallax Tilt, React Typewriter Effect, and Devicons.
 
-### `npm start`
+## Technologies
+* Javascript
+* HTML/CSS
+* Node
+* React
+* Bootstrap
+* React Router DOM
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Link
+[Sam Rogers Portfolio](https://obscure-lake-61347.herokuapp.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screen Shot
+![Sam Rogers Portfolio Screen Shot](./public/images/budget_tracker_screenshot.png)
 
-### `npm test`
+## Code Snippets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The below example code shows the footer component:
+```js
+<Container fluid className="footer">
+      <Row className="footerRow">
+        <Col md="4" className="footer-left">
+          <p className="footerText">Site Developed by Sam Rogers | Copyright © {year} SRD</p>
+        </Col>
+        <Col md="4" className="footer-center">
+          <p className="footerText">
+            Like this site? Take a{" "}
+            <a
+              href="https://github.com/samrogers15/Sam-Rogers-Portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              peek
+            </a>{" "}
+            at the source code!
+          </p>
+        </Col>
+        <Col md="4" className="footer-right">
+          <div className="footer-icons">
+            <div className="social-icons">
+              <a
+                className="footer-icon-images"
+                href="https://www.linkedin.com/in/samuelerogers/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon className="footerIcons" icon={faLinkedin} />
+              </a>
+              <a
+                className="footer-icon-images"
+                href="https://github.com/samrogers15"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="footerIcons"
+                  icon={faGithubSquare}
+                />
+              </a>
+              <a
+                className="footer-icon-images"
+                href="mailto:samrogers15@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="footerIcons"
+                  icon={faEnvelopeOpenText}
+                />
+              </a>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+```
 
-### `npm run build`
+The below example code shows the Navbar component with scroll functionality:
+```js
+const NavBar = () => {
+  const [expand, setExpandState] = useState(false);
+  const [navBarColor, setNavBarColorState] = useState(false);
+  const [navTextColor, setNavTextColorState] = useState(false);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  const scrollHandler = () => {
+    if (window.scrollY >= 45) {
+      setNavBarColorState(true);
+      setNavTextColorState(true);
+    } else {
+      setNavBarColorState(false);
+      setNavTextColorState(false);
+    }
+  };
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  window.addEventListener("scroll", scrollHandler);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  return (
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="md"
+      expanded={expand}
+      fixed="top"
+      className={navBarColor ? "stickyBackground" : "navbarBackground"}
+      id="navBarID"
+    >
+      <Container>
+        <Navbar.Brand>
+          {" "}
+          <span className={navTextColor ? "stickyText" : "navbarText"} id="pageHeader">
+            Sam Rogers Web Developer
+          </span>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            setExpandState(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => setExpandState(false)}>
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faHome}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Home
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Skills"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faLaptop}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Skills
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Work"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faBriefcase}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  Work
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/About"
+                onClick={() => setExpandState(false)}
+              >
+                <FontAwesomeIcon
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  icon={faPortrait}
+                />
+                <span
+                  className={navTextColor ? "stickyText" : "navbarText"}
+                  id="navigationText"
+                >
+                  About
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+```
 
-### `npm run eject`
+## Sources
+Application enabled using the following sources:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [React](https://reactjs.org/)
+* [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+* [NPM React Parallax Tilt](https://www.npmjs.com/package/react-parallax-tilt)
+* [NPM Typewriter Effect](https://www.npmjs.com/package/typewriter-effect)
+* [Devicon](https://devicon.dev/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
+Created by Sam Rogers - feel free to contact me to collaborate on this project or any other project!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[LinkedIn](https://www.linkedin.com/in/samuelerogers/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Portfolio](https://samrogers15.github.io/Current_Portfolio/index.html)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Github](https://github.com/samrogers15)
