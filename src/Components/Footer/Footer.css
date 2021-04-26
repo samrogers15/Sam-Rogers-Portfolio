@@ -31,13 +31,13 @@
 }
 
 .footerText {
-  font-size: 14px;
+  font-size: 1vw;
   color: midnightblue !important;
 }
 
 .footerIcons {
   color: midnightblue;
-  font-size: 45px;
+  font-size: 3vw;
 }
 
 .footer-icon-images {
