@@ -4,6 +4,7 @@
   font-family: "Source Code Pro", monospace;
   background-color: white;
   color: white;
+  max-height: 100px;
 }
 
 .footer-left,
@@ -17,17 +18,6 @@
   text-align: center !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-}
-
-@media (max-width: 767px) {
-  .footer-left,
-  .footer-center {
-    text-align: center !important;
-  }
-
-  .footer-right {
-    text-align: center !important;
-  }
 }
 
 .footerText {

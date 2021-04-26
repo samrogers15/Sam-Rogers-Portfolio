@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <Container fluid className="footer">
       <Row className="footerRow">
-        <Col md="4" className="footer-left">
+        <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-left">
           <p className="footerText">Site Developed by Sam Rogers | Copyright © {year} SRD</p>
         </Col>
-        <Col md="4" className="footer-center">
+        <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-center">
           <p className="footerText">
             Like this site? Take a{" "}
             <a
@@ -29,7 +29,7 @@ const Footer = () => {
             at the source code!
           </p>
         </Col>
-        <Col md="4" className="footer-right">
+        <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-right">
           <div className="footer-icons">
             <div className="social-icons">
               <a

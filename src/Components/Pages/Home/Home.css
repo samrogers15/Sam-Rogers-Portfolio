@@ -1,43 +1,24 @@
 .jumbotron-heading {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .heading {
   padding-top: 25px;
-  padding-left: 10px;
   color: white;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
-.homeRow {
-    padding-left: 15px;
-    padding-top: 15px;
-}
-
-.homeAboutIntro {
-  color: white;
-}
-
-.homeAboutSocial {
-  color: white;
-  text-align: center;
-  padding-bottom: 75px;
-}
-
-.home-icons {
-  color: white;
-  font-size: 75px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.rainbowPic {
-  width: 75%;
+.samnlola {
+  width: 40%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.typewriter {
+  padding-top: 25px;
 }

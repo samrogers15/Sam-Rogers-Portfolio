@@ -1,9 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import './Home.css';
 
 const TypeWriter = () => {
   return (
-    <Typewriter
+    <Typewriter className='typewriter'
       options={{
         strings: ["Developer & Programmer",
         "MERN Stack Developer",

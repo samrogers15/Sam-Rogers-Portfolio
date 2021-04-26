@@ -5,9 +5,11 @@ import "./JumboTron.css";
 
 const JumboTron = ({ content }) => {
   return (
-    <Jumbotron fluid className="jumbo">
-      {content}
-    </Jumbotron>
+    <div id="jumbotron-div">
+      <Jumbotron fluid className="jumbo">
+        {content}
+      </Jumbotron>
+    </div>
   );
 };
 
