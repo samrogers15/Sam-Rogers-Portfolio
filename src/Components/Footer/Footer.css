@@ -9,25 +9,27 @@
 
 .footer-left,
 .footer-center {
-  text-align: center !important;
-  padding-top: 20px !important;
-  padding-bottom: 10px !important;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 20px;
+  /* padding-bottom: 10px; */
 }
 
 .footer-right {
-  text-align: center !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footerText {
-  font-size: 1vw;
-  color: midnightblue !important;
+  font-size: 2.25vmin;
+  vertical-align: middle;
+  color: midnightblue;
 }
 
 .footerIcons {
   color: midnightblue;
-  font-size: 3vw;
+  font-size: 6.5vmin;
 }
 
 .footer-icon-images {

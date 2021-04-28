@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Techstack = ({ iconName }) => {
   return (
     <>
-      <Col lg={1} className="icons">
+      <Col className="icons">
         <i className={`${iconName} icon-images`}></i>
       </Col>
     </>

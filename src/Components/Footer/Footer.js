@@ -14,7 +14,7 @@ const Footer = () => {
     <Container fluid className="footer">
       <Row className="footerRow">
         <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-left">
-          <p className="footerText">Site Developed by Sam Rogers | Copyright © {year} SRD</p>
+          <p className="footerText">Site Developed by Sam Rogers | © {year} SRD</p>
         </Col>
         <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-center">
           <p className="footerText">

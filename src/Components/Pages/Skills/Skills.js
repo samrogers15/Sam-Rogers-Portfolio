@@ -13,14 +13,13 @@ const Skills = () => {
     <>
       <JumboTron
         content={
-          <h1 className="jumbotron-heading about-header">
+          <p className="jumbotron-heading about-header">
             How I Get The Job Done
-          </h1>
+          </p>
         }
       />
-
+      <p className="icon-header">Technical Skill Set</p>
       <Container fluid className="skill-set">
-        <h1 className="icon-header">Technical Skill Set</h1>
         <Row className="skill-icons-row">
           <Techstack iconName="devicon-react-original-wordmark" />
           <Techstack iconName="devicon-javascript-plain" />
@@ -38,8 +37,8 @@ const Skills = () => {
           <Techstack iconName="devicon-handlebars-plain-wordmark" />
         </Row>
       </Container>
+      <p className="icon-header">Tools in the Shed</p>
       <Container fluid className="tool-set">
-        <h1 className="icon-header">Tools in the Shed</h1>
         <Row className="tool-icons-row">
           <Techstack iconName="devicon-visualstudio-plain" />
           <Techstack iconName="devicon-git-plain" />
@@ -55,9 +54,11 @@ const Skills = () => {
         </Row>
       </Container>
       <Container fluid className="resumeButton">
-        <h1 className="resumeHeader">
-          Interested in learning more? Download my resume!
-        </h1>
+        <p className="resumeHeader">
+          Interested in learning more?
+          <br />
+          Download my resume!
+        </p>
         <Row>
           <Col className="resume-button-col">
             <Button variant="primary" href={Resume} target="_blank">

@@ -1,66 +1,69 @@
-.icon-header, .about-me-header, .resume-button-col, .resumeHeader {
-    text-align: center;
-    color: white;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    font-size: 3vw;
-  }
-  
-  .skill-set,
-  .tool-set {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-  
-  .skill-icons-row,
-  .tool-icons-row {
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-  
-  .icons {
-    color: white;
-    font-size: 3.5em !important;
-    margin: 5px !important;
-    border: 2px solid white !important;
-    vertical-align: middle !important;
-    text-align: center !important;
-    border-radius: 5px !important;
-    display: table !important;
-    overflow: hidden !important;
-    transition: all 0.4s ease 0s !important;
-  }
-  
-  @media (max-width: 767px) {
-    .icons {
-      margin: 10px !important;
-    }
-  }
-  
-  .icons:hover {
-    transform: scale(1.05) !important;
-    overflow: hidden !important;
-    border: 2.2px solid rgba(25, 25, 112, 0.883) !important;
-  }
-  
-  .icon-images {
-    padding: 20px !important;
-    line-height: 1.6 !important;
-  }
-  
-  .infoCard {
-    background: none;
-    text-align: justify;
-    color: white;
-    padding-bottom: 25px;
-  }
-  
-  .introParagraph {
-    padding-bottom: 25px;
-  }
-  
-  .about-activity {
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  
+.about-me-header,
+.resume-button-col {
+  text-align: center;
+  color: white;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 5vw;
+}
+
+.icon-header,
+.resumeHeader {
+  text-align: center;
+  color: white;
+  font-size: 4vw;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.skill-set,
+.tool-set {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.skill-icons-row,
+.tool-icons-row {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.icons {
+  color: white;
+  font-size: 3.5em !important;
+  margin: 5px !important;
+  border: 2px solid white !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+.icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(25, 25, 112, 0.883) !important;
+}
+
+.icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.infoCard {
+  background: none;
+  text-align: justify;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.introParagraph {
+  padding-bottom: 25px;
+}
+
+.about-activity {
+  font-size: 20px;
+  padding-bottom: 15px;
+}

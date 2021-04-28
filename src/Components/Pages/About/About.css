@@ -9,11 +9,12 @@
 
 .introParagraph {
   padding-bottom: 25px;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .activity {
-  font-size: 2vw;
+  font-size: 2.5vw;
+  font-weight: bold;
 }
 
 .activity-icon {
@@ -23,8 +24,6 @@
 .sam-pizza-pic {
   width: 500px;
   height: auto;
-  /* max-width: 50%;
-  max-height: 15%; */
   margin-left: auto;
   margin-right: auto;
   display: block;
