@@ -28,10 +28,10 @@ The portfolio was built with React and styled utilizing Bootstrap. Also included
 * React Router DOM
 
 ## Live Link
-[Sam Rogers Portfolio](https://obscure-lake-61347.herokuapp.com/)
+[Sam Rogers Portfolio](https://murmuring-taiga-29618.herokuapp.com/)
 
 ## Screen Shot
-![Sam Rogers Portfolio Screen Shot](./public/images/budget_tracker_screenshot.png)
+![Sam Rogers Portfolio Screen Shot](./src/Assets/profileScreenshot.png)
 
 ## Code Snippets
 
