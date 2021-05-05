@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import JumboTron from "../../Jumbotron/JumboTron";
 import Techstack from "./Techstack";
-import Resume from "../../../Assets/Resume/Resume.pdf";
+import Resume from "../../../Assets/Resume/SamRogersResume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "./Skills.css";

@@ -28,7 +28,7 @@ The portfolio was built with React and styled utilizing Bootstrap. Also included
 * React Router DOM
 
 ## Live Link
-[Sam Rogers Portfolio](https://murmuring-taiga-29618.herokuapp.com/)
+[Sam Rogers Portfolio](https://www.samrogersdev.com)
 
 ## Screen Shot
 ![Sam Rogers Portfolio Screen Shot](./src/Assets/profileScreenshot.png)
@@ -231,8 +231,18 @@ Application enabled using the following sources:
 ## Contact
 Created by Sam Rogers - feel free to contact me to collaborate on this project or any other project!
 
-[LinkedIn](https://www.linkedin.com/in/samuelerogers/)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
-[Portfolio](https://samrogers15.github.io/Current_Portfolio/index.html)
+[samuelerogers](https://www.linkedin.com/in/samuelerogers/)
 
-[Github](https://github.com/samrogers15)
+
+
+[Sam Rogers Dev](https://samrogers15.github.io/Current_Portfolio/index.html)
+
+
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+
+[samrogers15](https://github.com/samrogers15)
+
+
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
