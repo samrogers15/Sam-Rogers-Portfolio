@@ -4,12 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WorkCard from "./WorkCard";
 import JumboTron from "../../Jumbotron/JumboTron";
 import "./Work.css";
-
-// need to import some images
 import burger from "../../../Assets/Projects/eat-da-burgers.png";
 import employee from "../../../Assets/Projects/employeedirectory.png";
 import recipe from "../../../Assets/Projects/recipeappexample.png";
 import planner from "../../../Assets/Projects/Interactive-Entertainment-Planner.png";
+import showmyshow from "../../../Assets/Projects/showmyshow.gif";
 
 const Work = () => {
   return (
@@ -23,6 +22,14 @@ const Work = () => {
       />
       <Container fluid className="work">
         <Row className="workRow">
+        <Col lg={6} className="workCol">
+            <WorkCard
+              imgPath={showmyshow}
+              title="ShowMyShow"
+              description="ShowMyShow is an application that allows fans and bands to connect with one another. Users (fans or bands) can sign up using a valid email address and connect to a one-stop shop that allows them to discover  tons of information on upcoming music events in a given city. Fans can search for concerts in a specific city and are returned a list of upcoming shows with specific information and links to tickets via Ticketmaster - fans can also save shows to their profile and come back to them at a later date. There is a messaging function - the \'Green Room\' - where fans can connect with other fans to talk about music. Additionally, upon login, fans and bands alike are provided with a scrape of Tweets from the hashtag #ShowMyShow directly on their login page so they can keep current with any immediate information shared via Twitter."
+              link="www.showmyshow.org"
+            />
+          </Col>
           <Col lg={6} className="workCol">
             <WorkCard
               imgPath={recipe}
@@ -37,14 +44,6 @@ const Work = () => {
               title="Interactive Entertainment Planner"
               description="Let’s set the stage - it’s Friday evening. You’re topping off a LONG week of work. The weather is nasty. You’re completely fried. You just NEED. TO. RELAX. But you can’t muster up the effort to figure out how to unwind. WORRY NOT! Hop on over to the Interactive Entertainment Planner. With minimal effort, you’ll be able grab a movie recommendation based on a simple input, generate a random cocktail to make for yourself, and find recipes based on ingredients that you want to include."
               link="https://samrogers15.github.io/Interactive_Entertainment_Planner/"
-            />
-          </Col>
-          <Col lg={6} className="workCol">
-            <WorkCard
-              imgPath={burger}
-              title="Interactive Entertainment Planner"
-              description="This application allows a user to enter the name of a burger that they like into an input field and create a list of burgers that are stored in a table using the MySQL database. The user enters a burger name and the burger is added to the database along with a boolean value for wether the burger has been devoured or not (true or false). Upon adding the burger, a button is generated next to the burger name that allows a user to select whether or not they want to 'devour' the burger. When the burger is devoured, the specific burger shifts lists to be reflected under the 'devoured' list and the database is updated to reflect the new boolean value for devoured."
-              link="https://polar-waters-92959.herokuapp.com/"
             />
           </Col>
           <Col lg={6} className="workCol">
