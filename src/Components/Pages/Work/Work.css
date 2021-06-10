@@ -32,3 +32,8 @@
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px white !important;
 }
+
+#link {
+  margin-right: 10px;
+  text-align: center;
+}
