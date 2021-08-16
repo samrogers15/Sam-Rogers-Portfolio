@@ -18,15 +18,24 @@ const Footer = () => {
         </Col>
         <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-center">
           <p className="footerText">
-            Like this site? Take a{" "}
+            Have a {" "}
             <a
               href="https://github.com/samrogers15/Sam-Rogers-Portfolio"
               target="_blank"
               rel="noreferrer"
             >
-              peek
+              look
             </a>{" "}
             at the source code!
+            <br></br>
+            Or email me at{" "}
+            <a
+              href="mailto:samrogers15@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              samrogers15@gmail.com
+            </a>{""}.
           </p>
         </Col>
         <Col xs={4} sm={4} md={4} lg={4} xl={4} className="footer-right">
