@@ -1,7 +1,7 @@
 {
   "name": "samrogersportfolio",
   "version": "0.1.0",
-  "homepage": "http://samrogers15.github.io/Sam-Rogers-Portfolio",
+  "homepage": ".",
   "private": true,
   "engines": {
     "npm": "7.9.0",
